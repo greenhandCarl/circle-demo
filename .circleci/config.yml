@@ -12,7 +12,8 @@ jobs:
             - "0d:a0:da:e4:e1:a7:1d:ac:19:c5:ec:22:bf:b6:6e:5a"
       - checkout
       - restore_cache
-          key: dependencies_imooc
+          keys: 
+            - dependencies_imooc
       - run:
           name: Install
           command: yarn install
